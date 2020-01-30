@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-  <router-link to="/">首頁</router-link>
+  <router-link :to="{name:'first'}">首頁</router-link>
   <router-link :to="{name:'todolist'}">todolist</router-link>
   <router-link :to="{name:'countText'}">countText</router-link>
   <router-view></router-view>
@@ -8,10 +8,12 @@
 </template>
 <style>
 .wrap{
-  width: 1000px;
-  margin: auto,
+  width: 580px;
+  margin: auto;  
 } 
+
 a{
-  margin-left:58px;
+  margin-right: 125px;
+  color: blue;
 }
 </style>
